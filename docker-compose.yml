@@ -4,4 +4,6 @@ services:
     build: .
     restart: always
     expose:
-      - "4170"
+      - "80"  
+    ports:
+      - "2080:80"  
