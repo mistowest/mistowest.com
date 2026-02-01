@@ -3,12 +3,5 @@ services:
     container_name: mistowest
     build: .
     restart: always
-    networks:
-      - system_mister
     expose:
       - "4170"
-
-networks:
-  system_mister:
-    external: true
-
