@@ -23,7 +23,8 @@ RUN npm install -g npm@11.7.0 serve
 
 COPY --from=build /app/dist ./dist
 
-EXPOSE 4170
+# Expondo a porta 80
+EXPOSE 80
 
-CMD ["serve", "-s", "dist", "-l", "4170"]
-
+# Iniciando o servidor na porta 80
+CMD ["serve", "-s", "dist", "-l", "80"]
